@@ -92,11 +92,8 @@ public class StudentManagement {
             }catch (SQLException ex){
                 throw new RuntimeException(ex);
             }
-            int i = -1;
-            i++;
-            studentList.remove(i);
-            break;
         }
+        studentList.clear();
     }
 
     public static void main(String[] args) {
